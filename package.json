@@ -1,9 +1,10 @@
 {
   "name": "express",
   "version": "1.0.0",
-  "main": "main.js",
+  "main": "src/main.js",
   "scripts": {
-    "start": "nodemon --inspect main.js",
+    "start": "nodemon --inspect src/main.js",
+    "watch":"node-sass -w src/resources/scss --output src/public/css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,9 +24,12 @@
   "homepage": "https://github.com/HoangDinh2k4/NodeJS_Dinh#readme",
   "description": "",
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "express-handlebars": "^7.1.2",
+    "node-sass": "^9.0.0"
   },
   "devDependencies": {
+    "morgan": "^1.10.0",
     "nodemon": "^3.1.2"
   }
 }
